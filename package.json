@@ -1,0 +1,15 @@
+{
+  "name": "bluescape",
+  "version": "1.0.0",
+  "description": "QA Take Home Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Annie",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^2.6.5",
+    "puppeteer": "^3.3.0"
+  }
+}
