@@ -8,10 +8,12 @@ Click on submit
 Validate the test using an assert
 
 Test Scope:
-This automation testsuite is focusing on contact submit functionality and basic performance checks. All other features such as social media links, likes are not covered. Load test and stress test are not considered in this version.
+This automation testsuite is focusing on contact submit functionality and basic performance checks. 
+All other features such as social media links, likes are not covered. Load test and stress test are not considered 
+in this version.
 
 
-Test Tools
+Test Tools:
 1.1 Codeceptjs 
 1.2 puppeteer
 
@@ -64,7 +66,8 @@ To be discussed :
     1. input ‘ after submit is converted to ’. 
     2. Longest length will be considered in later versions. 
   Website field: 
-    1. is not mandatory. However when only white space is typed in the field, submit failed due to error message “Please enter a URL” 
+    1. is not mandatory. However when only white space is typed in the field, submit failed due to error message 
+       “Please enter a URL” 
   Date field:
     1. is mandatory and it allows invalid type of input as long as it is not empty string. It allows 0000, abcd, ….
   Performance Test: 
