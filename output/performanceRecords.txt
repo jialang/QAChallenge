@@ -1,0 +1,5 @@
+Average performance results as of Fri Jun 05 2020 12:22:59 GMT-0700 (Pacific Daylight Time) :
+The average responseEnd time is 174.5 in ms.
+The average domInteractive time is 679.8333333333334 in ms.
+The average domContentLoadedEventEnd time is 707 in ms.
+The average loadEventEnd time is 923.1666666666666 in ms.
