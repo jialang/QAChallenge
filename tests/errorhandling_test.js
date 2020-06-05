@@ -29,17 +29,17 @@ Data(contactFields).Scenario('Contact Form', async (I, current) => {
             I.see("Name is required");
         });
     } else {
-        let name = await I.grabValueFrom('input[name=g7-name]')
+        let name = await I.grabValueFrom('input[name=g7-name]');
         I.say('name is ' + name);
         assert.equal(name, current.name);
     }
     if (current.email.trim()) {
-        let email = await I.grabValueFrom('input[name=g7-email]')
+        let email = await I.grabValueFrom('input[name=g7-email]');
         I.say('email is ' + email);
         assert.equal(email, current.email);
     };
     if (current.website.trim()){
-        let website = await I.grabValueFrom('input[name=g7-website]')
+        let website = await I.grabValueFrom('input[name=g7-website]');
         I.say('website is ' + website);
         assert.equal(website, current.website);
     };
@@ -50,10 +50,9 @@ Data(contactFields).Scenario('Contact Form', async (I, current) => {
             I.see("Date is required");
         });
     } else {
-        let date = await I.grabValueFrom('input[name=g7-date]')
+        let date = await I.grabValueFrom('input[name=g7-date]');
         I.say('date is ' + date);
         assert.equal(date, current.date);
     }
   
-    I.saveScreenshot('after.png');
-}).tag('@errorhandling');
+}).tag('@errorhandling').tag('@smoke');

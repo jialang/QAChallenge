@@ -13,7 +13,7 @@ Scenario('Accept Cookie', async (I) => {
     I.openNewTab();
     I.amOnPage(CONFIG.basicurl);
     I.dontSee('Privacy & Cookies:');
-}).tag('@smoke');
+}).tag('@smoke').tag('@cookie');
 
 Scenario('Ignore Cookie', async (I) => {
     I.amOnPage(CONFIG.basicurl);
@@ -32,4 +32,4 @@ Scenario('Ignore Cookie', async (I) => {
     I.openNewTab();
     I.amOnPage(CONFIG.basicurl);
     I.see('Privacy & Cookies:');
-}).tag('@functional')
+}).tag('@smoke').tag('@cookie');

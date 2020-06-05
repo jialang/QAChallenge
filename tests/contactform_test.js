@@ -32,5 +32,23 @@ Data(contactFields).Scenario('Contact Form', async (I, current) => {
         let numsOfDataField = await I.grabNumberOfVisibleElements('p');
         assert.equal(4, numsOfDataField);
     });
-}).tag('@filling');
+}).tag('@submit').tag('@smoke');
 
+Scenario('Go back Link', async (I) => {
+    I.amOnPage(CONFIG.basicurl);
+    I.seeElement('.site-content')
+    I.fillField('g7-name', "abc");
+    I.fillField('g7-email', "abc@yahoo.com" );
+    I.fillField('g7-date', "2020-06-01");
+    I.click('//button[@type="submit"]');
+    I.see('Message Sent', 'h3');
+    I.clickLink('go back');
+    let name = await I.grabValueFrom('input[name=g7-name]');
+    assert.equal(name, '');
+    let email = await I.grabValueFrom('input[name=g7-email]');
+    assert.equal(email, '');
+    let website = await I.grabValueFrom('input[name=g7-website]');
+    assert.equal(website, '');
+    let date = await I.grabValueFrom('input[name=g7-date]');
+    assert.equal(date, '');
+}).tag('@goback').tag('@smoke');

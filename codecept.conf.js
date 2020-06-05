@@ -13,7 +13,8 @@ exports.config = {
       show: true,
       windowSize: '1200x900',
 	  waitForNavigation: "networkidle0"
-    }
+    },
+    FileSystem: {}
   },
   include: {
     I: './steps_file.js'
@@ -23,7 +24,7 @@ exports.config = {
   name: 'Bluescape',
   plugins: {
     retryFailedStep: {
-      enabled: true
+      enabled: true 
     },
     screenshotOnFail: {
       enabled: true
