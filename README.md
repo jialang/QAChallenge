@@ -2,7 +2,7 @@
 Test Strategy for QA Challenge Project
 
 Test Requirement:
-Open browser and navigate to https://bluescapeqainterview.wordpress.com/contact/
+Open browser and navigate to (hidden)
 Fill out the fields with any applicable data 
 Click on submit 
 Validate the test using an assert
